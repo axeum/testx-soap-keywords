@@ -24,4 +24,4 @@ testx.addKeywords(require 'testx-soap-keywords')
 |                        | request       | the request to send to the service || No |
 |                        | xpath         | xpath expression to the node value or node attribute value || No |
 |                        | expected      | expected value || No |
-|                        | [xmlns attr name] | [xmlns attr value] | Specify the xmlns attribute name (e.g. saml2p) and value (e.g. http://...) | No |
+|                        | [xmlns attr name] | [xmlns attr value] | Specify the xmlns attribute name (e.g. saml2p) and value (e.g. http://...) | Yes |
