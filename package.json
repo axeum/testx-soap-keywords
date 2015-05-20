@@ -9,7 +9,7 @@
     "xmldom": "^0.1.19",
     "xpath": "0.0.9"
   },
-  "name": "soap-testx",
+  "name": "testx-soap-keywords",
   "version": "0.1.0",
   "description": "Extension for testx to test soap services",
   "main": "index.coffee",
