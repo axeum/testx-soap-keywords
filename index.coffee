@@ -9,6 +9,9 @@ _         = require 'lodash'
 
 module.exports =
   'soap': (args) ->
+    if args.url.indexOf('/') == 0
+      args.url = browser.baseUrl + args.url
+      
     post = deasync request.post
     res = post
       url: args.url

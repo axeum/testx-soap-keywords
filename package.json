@@ -10,7 +10,7 @@
     "xpath": "0.0.9"
   },
   "name": "testx-soap-keywords",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extension for testx to test soap services",
   "main": "index.coffee",
   "devDependencies": {},
