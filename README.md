@@ -1,7 +1,7 @@
 testx-soap-keywords
 =====
 
-A library that extends testx with keywords for testing soap services. This library is packaged as a npm package and published to npm.isd.ictu
+A library that extends testx with keywords for testing soap services. This library is packaged as a npm package.
 
 ## How does it work
 From the directory of the art code install the package as follows:
