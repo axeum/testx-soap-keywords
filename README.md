@@ -6,7 +6,7 @@ A library that extends testx with keywords for testing soap services. This libra
 ## How does it work
 From the directory of the art code install the package as follows:
 ```sh
-npm install testx-soap-keywords --save --registry=http://npm.isd.ictu
+npm install testx-soap-keywords --save
 ```
 
 After installing the package add the keywords to your protractor config file as follows:
