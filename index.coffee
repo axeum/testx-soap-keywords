@@ -11,7 +11,7 @@ module.exports =
   'soap': (args) ->
     if args.url.indexOf('/') == 0
       args.url = browser.baseUrl + args.url
-      
+
     post = deasync request.post
     res = post
       url: args.url
@@ -29,8 +29,10 @@ module.exports =
 
     node = select(args.xpath, doc)[0]
     if typeof node != 'undefined'
-      console.log node.nodeValue
-      expect(node.nodeValue).toBe(args.expected)
+      for key, val of _.omit(args, ['url', 'xpath', 'request'])
+        if key.match /expected/i
+          console.log "Actual nodeValue = #{node.nodeValue}\nExpected nodeValue = #{val}"
+          expect(node.nodeValue).toBe(val)
     else
       since("Node with xpath '#{args.xpath}' should be in the response body").
       expect(node).not.toBe(undefined)
